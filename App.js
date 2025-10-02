@@ -1,11 +1,31 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TextInput,LinearGradient } from 'react-native';
+import Constants from 'expo-constants';
 
 export default function App() {
+    const statusBarHeight = Constants.statusBarHeight;
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar 
+        style='auto'
+        hidden = {false}
+        backgroundColor='#883030ff'
+      />
+      <Text>Bienvenido a la liga A+7</Text>
+      <ScrollView>
+        <Text>Contenido que se puede desplazar...</Text>
+      </ScrollView> 
+      <TextInput
+        placeholder="Escribe aquí..."
+      />
+      <LinearGradient
+      colors={['#ff7e5f', '#feb47b']}
+    
+    >
+      <Text>Texto con gradiente</Text>
+    </LinearGradient>
+  
     </View>
   );
 }
