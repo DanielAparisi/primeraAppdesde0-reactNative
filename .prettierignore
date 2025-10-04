@@ -1,0 +1,36 @@
+# Dependencias
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Sistema
+.DS_Store
+*.tgz
+*.tar.gz
+
+# Logs
+logs
+*.log
+
+# Archivos de configuración que no necesitan formateo
+package-lock.json
+yarn.lock
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+
+# Metro
+.metro-health-check*
+
+# Builds
+android/
+ios/
